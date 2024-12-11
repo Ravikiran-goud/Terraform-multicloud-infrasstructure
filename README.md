@@ -8,10 +8,6 @@ Prerequisites
 
 Getting Started
 
-Usage
-
-Project Structure
-
 Credits
 
 🚀 Introduction

@@ -43,44 +43,32 @@ bash
 git clone https://github.com/Ravikiran-goud/Terraform-multicloud-infrasstructure.git
 cd Terraform-multicloud-infrasstructure
 Set Up Terraform Providers 🌩️ Open the main.tf file and configure your cloud providers. For example, to set up AWS:
-
-hcl
 provider "aws" {
   region = "us-east-1"
 }
-Initialize Terraform 🔄 Run the following to download the necessary provider plugins:
 
+Initialize Terraform 🔄 
+Run the following to download the necessary provider plugins:
 bash
 terraform init
-Plan the Infrastructure 📝 Before applying changes, see what Terraform will do by running:
 
+Plan the Infrastructure 📝 Before applying changes, see what Terraform will do by running:
 bash
 terraform plan
-Apply the Infrastructure ✅ When you're ready to provision resources, run:
 
+Apply the Infrastructure ✅ When you're ready to provision resources, run:
 bash
 terraform apply
 Confirm with yes when prompted to start the deployment process.
 
 Verify Your Resources ✔️ After Terraform finishes deploying, check your cloud provider's console (AWS, Azure, GCP) to see the resources you’ve created. 🎉
 
-🔥 Usage
-🗑️ Destroy Infrastructure
-If you need to tear down everything you've provisioned, simply run:
 
+If you need to tear down everything you've provisioned, simply run:
 bash
 terraform destroy
 You will be prompted to confirm. Type yes to delete the resources. ⚠️
 
-🗂️ Project Structure
-Here’s an overview of the project layout:
-
-plaintext
-Terraform-multicloud-infrasstructure/
-├── main.tf            # Cloud providers and resource definitions 🏗️
-├── variables.tf       # Variables for cloud setup and configuration ⚙️
-├── outputs.tf         # Outputs from your deployed infrastructure 📊
-└── README.md          # This file, your guide to the project 📖
 👏 Credits
 Terraform: Infrastructure as code made easy! 🌐
 
